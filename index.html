@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title> Restaurante La Mexicana </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurante mexicano con comida auténtica y servicio excepcional.">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<style>
+    /* Esto crea el efecto de animación sin necesidad de un archivo CSS externo */
+    .transition {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+        cursor: pointer;
+    }
+
+    /* Lo que pasa cuando el usuario pasa el cursor sobre el cuadro */
+    .transition:hover {
+        transform: translateY(-8px) scale(1.01); /* Levanta el cuadro y hace un mini zoom */
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4) !important; /* Vuelve la sombra más profunda */
+    }
+</style>
+<body> 
+    <header>
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: rgb(255, 240, 207);" aria-label="Navegacion principal">
+        <div class="container">
+            <!-- Botón para pantallas móviles -->
+            <button
+                class="navbar-toggler"
+                type="button" 
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Mostrar u ocultar menu">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+
+            <!-- Enlaces de navegación personalizados -->
+            <div class="collapse navbar-collapse" id="menuPrincipal"> 
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#Inicio" class="btn me-2 shadow-sm" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Constantia', serif;">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Historia" class="btn me-2 shadow-sm" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Constantia', serif;">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Platillos" class="btn me-2 shadow-sm" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Constantia', serif;">Platillos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Lugares para visitar en Apizaco" class="btn me-2 shadow-sm" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Constantia', serif;">Lugares para visitar en Apizaco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Servicios" class="btn me-2 shadow-sm" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Constantia', serif;">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Contacto" class="btn me-2 shadow-sm" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Constantia', serif;">Contacto</a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main id="contenido">
+       <!--- seccion hero-->
+<section id="inicio" aria-labelledby="Inicio">
+    <div class="container py-5 text-center">
+        
+        <!-- Contenedor relativo para posicionar el texto sobre la imagen -->
+        <div class="position-relative d-inline-block w-100">
+            
+            <!-- Tu Imagen de fondo -->
+            <img src="./img/Restaurante.png" class="img-fluid rounded w-100"  style="display: block; min-height: 300px; object-fit: cover;">
+            
+            <!-- Capa oscura opcional (Overlay) para mejorar la lectura de las letras blancas -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 rounded" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+
+            <!-- Contenido Centrado Absolutamente -->
+            <div class="position-absolute top-50 start-50 translate-middle w-100 px-3 text-white">
+                <header class="mb-3">
+                    <!-- Título con tipografía English 111 Std Vivace -->
+                    <h1 id="Inicio" class="display-3 fw-bold" style=" font-family: 'Bodoni MT', 'Bodoni', serif; color: white; text-shadow: 2px 2px 8px rgba(0,0,0,0.8);"> 
+                        La tradición del buen comer desde 1950 
+                    </h1>
+                </header>
+
+                <!-- Botón abajo del título con tipografía Bodoni y color #990000 -->
+                <p class="mb-0">
+                    <a href="#Historia" class="btn btn-lg me-2 shadow" style="font-family: 'Gill Sans MT', 'Gill Sans', 'Arial', sans-serif; background-color: #990000; color: white; border: none; padding: 10px 30px;"> 
+                        Descubre Nuestra Historia 
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+        <!-- Layout de contenido + sidebar  -->
+        <section aria-labelledby="Historia" style="background-color: rgb(81, 48, 32); color: white;"> 
+    <div class="container py-5"> 
+        <div class="row align-items-center"> 
+            
+            <!-- Columna de la Historia (Lado izquierdo) --> 
+            <article class="col-12 col-md-6" aria-labelledby="Historia"> 
+                <!-- Título con Gill Sans MT -->
+                <h3 id="Historia" class="mb-4" style="font-family: 'Gill Sans MT', 'Gill Sans', 'Arial', sans-serif;"> 
+                    Origen del Restaurante La Mexicana 
+                </h3>
+                
+                <!-- Textos con Constantia -->
+                <p style="font-family: 'Constantia', 'Georgia', serif; line-height: 1.6;">
+                    Una Identidad Inspirada en Apizaco.
+
+                    Restaurante La Mexicana comenzó el 1 de febrero de 1950 como un proyecto familiar que, 
+                    con el paso de los años, se convirtió en parte de la vida de la comunidad. 
+                    En tres generaciones, la familia Flores ha mantenido vivo este espacio, 
+                    conservando el carácter y la tradición que le dieron origen.
+                    Nuestra ubicación, siempre cerca del icónico monumento de La Maquinita, 
+                    donde seguimos recibiendo a nuestros clientes con la calidez que solo un negocio familiar puede ofrecer. 
+                    El restaurante ha sido testigo de los cambios de la ciudad y de las historias de quienes lo visitan. 
+                    Actualmente, Ángel Flores Montiel continúa con la labor iniciada por su familia, 
+                    manteniendo abiertas las puertas de un negocio que forma parte de la memoria.
+                    Su propuesta gastronómica reúne platillos tradicionales que han acompañado a  generaciones de comensales.
+                    La Mexicana es una historia de permanencia, trabajo familiar y arraigo. 
+                    Una invitación a conocer un lugar que ha formado parte de la ciudad de Apizaco durante más de siete décadas
+                    y que sigue compartiendo su mesa con quienes desean descubrir un poco de su historia.
+
+
+                </p>
+               
+            </article>
+
+            <!-- Columna de la Imagen (Lado derecho) -->
+            <div class="col-12 col-md-6 mt-4 mt-md-0">
+                <figure class="mb-0">
+                    <img src="./img/logo.png" 
+                         class="img-fluid rounded shadow w-100" 
+                         alt="Historia del Restaurante La Mexicana"
+                         style="object-fit: cover; max-height: 400px;">
+                </figure>
+            </div>
+
+         </div>
+    </div>
+</section>
+        
+       <!-- Caracteritiscas -->
+       <!-- Caracteritiscas y Platillos de Temporada -->
+<section id="Platillos" aria-labelledby="Platillos-Titulo" style="background-color: #FFF0CF;"> 
+    <div class="container py-5">
+        
+        <!-- ========================================== -->
+        <!-- SECCIÓN 1: PLATILLOS DESTACADOS -->
+        <!-- ========================================== -->
+        <header class="mb-4"> 
+            <!-- Título de la sección adaptado a la tipografía Gill Sans MT -->
+            <h2 id="Platillos-Titulo" style="font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;"> 
+                Platillos Destacados
+            </h2>
+        </header>
+        
+        <div class="row g-4 mb-5"> 
+            
+            <!-- CUADRO 1 -->
+            <article class="col-12 col-md-6"> 
+                <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <div class="ratio ratio-16x9">
+                        <img src="./img/caract-1.jpg" class="card-img-top rounded-top" alt="Sabor Tradicional" style="object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title h5"> Ensalada mixta de la Casa </h3>
+                        <p class="card-text">
+                            Mezcla de lechugas, espinaca, arándano,
+                            aderezo de la casa y fruta de temporada.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CUADRO 2 -->
+            <article class="col-12 col-md-6">
+                <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <div class="ratio ratio-16x9">
+                        <video controls class="rounded-top" poster="./img/poster-video.jpg" style="object-fit: cover;">
+                            <source src="./video/ambiente.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-body"> 
+                        <h3 class="card-title h5"> Platón de Chalupas </h3>
+                        <p class="card-text"> 
+                            Orden de 6 chalupas de salsa roja y verde
+                            con queso y cebolla finamente picada
+                        </p>
+                    </div>
+                </div>
+            </article> 
+
+            <!-- CUADRO 3 -->
+            <article class="col-12 col-md-6"> 
+                <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <div class="ratio ratio-16x9">
+                        <img src="./img/caract-3.jpg" class="card-img-top rounded-top" alt="Ingredientes" style="object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title h5"> Sopa de Apizahuatl </h3>
+                        <p class="card-text"> 
+                            Caldillo de frijoles de la casa con torlla
+                            en juliana, queso fresco y chipotle
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CUADRO 4 -->
+            <article class="col-12 col-md-6"> 
+                <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <div class="ratio ratio-16x9">
+                        <img src="./img/caract-4.jpg" class="card-img-top rounded-top" alt="Servicio" style="object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title h5"> Sopa de Medula </h3>
+                        <p class="card-text"> 
+                            Sopa tradicional tlaxcalteca elaborada con caldo de huesos, carne de res, verduras frescas y especias aromáticas, perfecta para reconfortar el alma.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CUADRO 5 -->
+            <article class="col-12 col-md-6"> 
+                <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <div class="ratio ratio-16x9">
+                        <img src="./img/caract-5.jpg" class="card-img-top rounded-top" alt="Platillos" style="object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title h5"> Gaoneras </h3>
+                        <p class="card-text"> 
+                            Carnes asadas a la perfección, marinadas con nuestra mezcla secreta de especias y acompañadas de guarniciones tradicionales que realzan su sabor.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CUADRO 6 -->
+            <article class="col-12 col-md-6"> 
+                <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <div class="ratio ratio-16x9">
+                        <img src="./img/caract-6.jpg" class="card-img-top rounded-top" alt="Historia" style="object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title h5"> Mixiote de Carnero </h3>
+                        <p class="card-text"> 
+                            Mixiote tradicional hecho con carne de carnero marinada en una mezcla de chiles y especias, envuelta en hojas de maguey y cocida lentamente para lograr una textura tierna y un sabor inigualable.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- SECCIÓN 2: PLATILLOS DE TEMPORADA -->
+        <!-- ========================================== -->
+        <header class="mb-4 pt-4 border-top border-dark-subtle"> 
+            <h2 id="Temporada-Titulo" style="font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;"> 
+                Platillos de Temporada "Comida Tlaxcalteca"
+            </h2>
+        </header>
+
+        <!-- Rejilla distribuida estéticamente (3 arriba, 2 abajo bien centrados) -->
+        <div class="row g-4 justify-content-center">
+            
+            <!-- TEMPORADA 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <details class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <summary class="p-3 card-title h5 mb-0" style="cursor: pointer; list-style: none; font-weight: 600;">
+                        🐜 Escamoles
+                        <span class="float-end small">▼</span>
+                    </summary>
+                    <div class="card-body pt-0">
+                        <div class="ratio ratio-16x9 mb-3">
+                            <img src="./img/temporada-1.jpg" class="rounded" alt="Chiles en Nogada" style="object-fit: cover;">
+                        </div>
+                        <p class="card-text text-white-50">
+                            Escamoles frescos, conocidos como el "caviar mexicano", preparados con mantequilla de la casa y servidos con tortillas recién hechas.
+                        </p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- TEMPORADA 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <details class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <summary class="p-3 card-title h5 mb-0" style="cursor: pointer; list-style: none; font-weight: 600;">
+                        🥩 Mixiote de Carnero
+                        <span class="float-end small">▼</span>
+                    </summary>
+                    <div class="card-body pt-0">
+                        <div class="ratio ratio-16x9 mb-3">
+                            <img src="./img/temporada-2.jpg" class="rounded" alt="Pan de Muerto" style="object-fit: cover;">
+                        </div>
+                        <p class="card-text text-white-50">
+                            Mixiote tradicional hecho con carne de carnero marinada en una mezcla de chiles y especias, envuelta en hojas de maguey y cocida lentamente para lograr una textura tierna y un sabor inigualable.
+                        </p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- TEMPORADA 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <details class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <summary class="p-3 card-title h5 mb-0" style="cursor: pointer; list-style: none; font-weight: 600;">
+                        🍗 Pollo tocatlan
+                        <span class="float-end small">▼</span>
+                    </summary>
+                    <div class="card-body pt-0">
+                        <div class="ratio ratio-16x9 mb-3">
+                            <img src="./img/temporada-3.jpg" class="rounded" alt="Pozole Navideño" style="object-fit: cover;">
+                        </div>
+                        <p class="card-text text-white-50">
+                            Pollo tocatlan es un platillo tradicional de Tlaxcala que se prepara con pollo marinado en una mezcla de chiles, especias y hierbas aromáticas, luego cocido lentamente para lograr una carne jugosa y llena de sabor, acompañado de guarniciones típicas como arroz, frijoles y tortillas.
+                        </p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- TEMPORADA 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <details class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <summary class="p-3 card-title h5 mb-0" style="cursor: pointer; list-style: none; font-weight: 600;">
+                        🌶️ Chile Nogada
+                        <span class="float-end small">▼</span>
+                    </summary>
+                    <div class="card-body pt-0">
+                        <div class="ratio ratio-16x9 mb-3">
+                            <img src="./img/temporada-4.jpg" class="rounded" alt="Rosca de Reyes" style="object-fit: cover;">
+                        </div>
+                        <p class="card-text text-white-50">
+                            Chile en Nogada es un platillo tradicional mexicano que se prepara con chiles poblanos rellenos de picadillo (una mezcla de carne, frutas y especias), cubiertos con una salsa de nuez cremosa y decorados con granada y perejil, representando los colores de la bandera mexicana.
+                        </p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- TEMPORADA 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <details class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <summary class="p-3 card-title h5 mb-0" style="cursor: pointer; list-style: none; font-weight: 600;">
+                        🍷 Pulque
+                        <span class="float-end small">▼</span>
+                    </summary>
+                    <div class="card-body pt-0">
+                        <div class="ratio ratio-16x9 mb-3">
+                            <img src="./img/temporada-5.jpg" class="rounded" alt="Tamales de Cuaresma" style="object-fit: cover;">
+                        </div>
+                        <p class="card-text text-white-50">
+                            Pulque es una bebida tradicional mexicana elaborada a partir de la fermentación del aguamiel, el jugo extraído del maguey. Es conocido por su sabor ligeramente ácido y su textura viscosa, y se consume tanto solo como en cócteles o mezclado con frutas para crear bebidas refrescantes y llenas de sabor.
+                        </p>
+                    </div>
+                </details>
+            </div>
+
+        </div>
+    </div>    
+</section>
+
+        <!-- Galeria -->
+        <!-- Caracteritiscas - Datos Curiosos de Tlaxcala -->
+<section id="Lugares para visitar en Apizaco" aria-labelledby="Lugares para visitar en Apizaco" style="background-color: rgb(81, 48, 32);"> 
+    <div class="container py-5">
+        <header class="mb-4"> 
+            <!-- Título de la sección adaptado con letras claras sobre el fondo café -->
+            <h2 id="Lugares para visitar en Apizaco" style="font-family: 'Gill Sans MT', 'Gill Sans', sans-serif; color: #FFF0CF;"> 
+                Lugares para visitar en Apizaco
+            </h2>
+        </header>
+        
+        <div class="row g-4 justify-content-center"> 
+            
+            <!-- CUADRO 1 -->
+            <article class="col-12 col-md-6"> 
+                <!-- Fondo crema (#FFF0CF), letras oscuras y la clase transition para la animación -->
+                <div class="card h-100 shadow border-0 transition" style="background-color: #FFF0CF; color: rgb(40, 20, 10); font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <div class="ratio ratio-16x9">
+                        <img src="./img/caract-1.jpg" class="card-img-top rounded-top" alt="Sabor Tradicional" style="object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title h5"> Museo Casa de Piedra </h3>
+                        <p class="card-text">
+                            Museo Casa De Piedra, ubicado en Apizaco, es un espacio cultural que exhibe arte contemporáneo y ofrece una experiencia única al combinar la arquitectura moderna con la historia y cultura de la región, convirtiéndolo en un punto de referencia para los amantes del arte y la cultura en México.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CUADRO 2 -->
+            <article class="col-12 col-md-6">
+                <div class="card h-100 shadow border-0 transition" style="background-color: #FFF0CF; color: rgb(40, 20, 10); font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <div class="ratio ratio-16x9">
+                        <video controls class="rounded-top" poster="./img/poster-video.jpg" style="object-fit: cover;">
+                            <source src="./video/ambiente.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-body"> 
+                        <h3 class="card-title h5"> La Estacion del Ferrocarril </h3>
+                        <p class="card-text"> 
+                            La Estación del Ferrocarril en Apizaco es un sitio histórico que data del siglo XIX, originalmente construido para el transporte de mercancías y pasajeros. Hoy en día, este edificio emblemático ha sido restaurado y convertido en un espacio cultural que alberga exposiciones, eventos y actividades artísticas, preservando así su legado como parte importante de la historia ferroviaria de México.
+                        </p>
+                    </div>
+                </div>
+            </article> 
+
+            <!-- CUADRO 3 -->
+            <article class="col-12 col-md-6"> 
+                <div class="card h-100 shadow border-0 transition" style="background-color: #FFF0CF; color: rgb(40, 20, 10); font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <div class="ratio ratio-16x9">
+                        <img src="./img/caract-3.jpg" class="card-img-top rounded-top" alt="Ingredientes" style="object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title h5"> Basílica de la Misericordia </h3>
+                        <p class="card-text"> 
+                            La Basílica de la Misericordia es un templo religioso dedicado a la misericordia divina, construido en el siglo XX como un símbolo de fe y esperanza para la comunidad local.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CUADRO 4 -->
+            <article class="col-12 col-md-6"> 
+                <div class="card h-100 shadow border-0 transition" style="background-color: #FFF0CF; color: rgb(40, 20, 10); font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <div class="ratio ratio-16x9">
+                        <img src="./img/caract-4.jpg" class="card-img-top rounded-top" alt="Servicio" style="object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title h5"> La Maquinita </h3>
+                        <p class="card-text"> 
+                            La Maquinita de Apizaco es un monumento emblemático ubicado en Apizaco, México, que rinde homenaje a la historia ferroviaria de la región. Esta antigua locomotora de vapor, restaurada y exhibida en un parque público, se ha convertido en un símbolo de identidad local y un punto de encuentro para residentes y visitantes que desean conocer más sobre el legado ferroviario de Apizaco.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CUADRO 5 -->
+            <article class="col-12 col-md-6"> 
+                <div class="card h-100 shadow border-0 transition" style="background-color: #FFF0CF; color: rgb(40, 20, 10); font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <div class="ratio ratio-16x9">
+                        <img src="./img/caract-5.jpg" class="card-img-top rounded-top" alt="Platillos" style="object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title h5"> Centro Cultural La Libertad </h3>
+                        <p class="card-text"> 
+                            Centro Cultural La Libertad es un espacio dedicado a la promoción de las artes y la cultura en Apizaco, México. Este centro cultural ofrece una variedad de actividades, incluyendo exposiciones de arte, talleres, presentaciones teatrales y eventos musicales, con el objetivo de fomentar la creatividad y el intercambio cultural entre la comunidad local y los visitantes.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CUADRO 6 -->
+            <article class="col-12 col-md-6"> 
+                <div class="card h-100 shadow border-0 transition" style="background-color: #FFF0CF; color: rgb(40, 20, 10); font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <div class="ratio ratio-16x9">
+                        <img src="./img/caract-6.jpg" class="card-img-top rounded-top" alt="Historia" style="object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title h5"> Centro de las Artes </h3>
+                        <p class="card-text"> 
+                            Centro de las Artes de Apizaco es un espacio dedicado a la promoción y difusión de las artes visuales, escénicas y literarias en la región. Este centro cultural ofrece una variedad de programas, talleres y exposiciones que buscan fomentar la creatividad y el intercambio cultural entre artistas locales e internacionales, convirtiéndose en un punto de referencia para la comunidad artística de Apizaco.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CUADRO 7 (Centrado automáticamente gracias a justify-content-center en la fila) -->
+            <article class="col-12 col-md-6"> 
+                <div class="card h-100 shadow border-0 transition" style="background-color: #FFF0CF; color: rgb(40, 20, 10); font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    <div class="ratio ratio-16x9">
+                        <img src="./img/caract-7.jpg" class="card-img-top rounded-top" alt="Cultura de Apizaco" style="object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title h5"> Plaza de Toros </h3>
+                        <p class="card-text"> 
+                            Plaza de Toros de Apizaco es un recinto taurino ubicado en la ciudad de Apizaco, México, que se utiliza para la celebración de corridas de toros y eventos culturales relacionados con la tradición taurina. Esta plaza de toros es un símbolo importante de la cultura local y atrae a aficionados de la tauromaquia tanto nacionales como internacionales, ofreciendo una experiencia única para quienes desean conocer más sobre esta tradición arraigada en la historia de México.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>    
+</section>
+
+        <!-- Canciones  -->
+        <section id="canciones" aria-labelledby="Canciones Populares">
+            <div class="container">
+            <header> 
+                <h2 id="Canciones Populares"> Canciones populares </h2>
+                <p> Algunas de las canciones mas populares de Camilo Septimo </p>
+            </header>
+
+            <ol> 
+                <li> Miel </li>
+                <li> Mapas </li>
+                <li> Eco </li>
+                <li> Luna roja </li>
+                <li> Te recuerdo </li>
+            </ol>
+            </div>
+        </section>
+
+        <!-- FAQ con details y summary -->
+        <section id="FAQ" aria-labelledby="Faq"> 
+            <div class="container py-5">
+            <header> 
+                <h2 id="faq"> Preguntas frecuentes </h2>
+            </header>
+
+            <details class="border rounded p-3 mb-3 shadow-sm">
+                <summary class="fw-semibold"> 
+                    ¿Cuándo se formó Camilo Séptimo?
+                </summary>
+                <p class="mt-2 mb-0 text-muted">
+                    Camilo Séptimo se formó en el año 2010 en México.
+                </p>
+            </details>
+
+            <details class="border rounded p-3 mb-3 shadow-sm">
+                <summary class="fw-semibold"> 
+                    ¿Cuáles son algunos de sus álbumes más populares?
+                </summary>
+                <p class="mt-2 mb-0 text-muted">
+                    Algunos de sus álbumes más populares incluyen "Óleos", "Camino a Encontrarte" y "Fénix".
+                </p>
+            </details>
+
+            <details class="border rounded p-3 mb-3 shadow-sm">
+                <summary class="fw-semibold">
+                    ¿Quiénes son los miembros de la banda?
+                </summary>
+                <p class="mt-2 mb-0 text-muted">
+                    La banda está compuesta por Sergio Acosta (vocalista y guitarrista), Pablo Moreno (bajista) y Daniel Aguilar (baterista).
+                </p>
+            </details>
+            </div>
+        </section>
+
+        <!-- Contacto  -->
+        <section id="Contacto" aria-labelledby="Contacto">
+            <div class="container py-5">
+            <header class="mb-4"> 
+                <h2 id="Contacto"> Contacto </h2>
+                <p class="text-muted"> 
+                    Si deseas ponerte en contacto conmigo, puedes enviarme un correo a: 
+                </p> 
+            </header>
+
+            <form action="#" methiod="post"> 
+                <fieldset>
+                        <legend> Escribenos </legend>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6"> 
+                            <label for="nombre" class="form-label"> Nombre: </label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="col-12 col-md-6"> 
+                            <label for= "email" class="form-label"> Correo electronico: </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+
+                        <div class="col-12"> 
+                            <label for="Tema" class="form-label">  Tema: </label> <br>
+                            <select id="tema" name="tema" class="form-select">
+                                <option value="Albumenes"> Albumenes </option>
+                                <option value="Conciertos"> Conciertos </option>
+                                <option value="otro"> Otro </option>
+                            </select>
+                        </div>
+
+                        <div class="col-12"> 
+                            <label for="mensaje" class="form-label"> Mensaje: </label> <br>
+                            <textarea id="mensaje" name="mensaje" rows="10" class="form-control" required></textarea>
+                        </div>
+                    
+                        <div class="col-12"> 
+                            <button type="submit" class="btn btn-primary me-2"> Enviar </button>
+                            <button type="reset" class="btn btn-outline-secondary"> Limpiar </button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            </div>
+        </section>
+
+        <!-- Pie de Pgaina -->
+         <footer class="bg-light mt-5">
+            <div class="container py-4">
+                <div class="row g-3 align-items-center">
+                    <nav class= "col-12 col-md-6" aria-labelledby="Enlaces del footer">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#Inicio" class="text-decoration-none"> Inicio </a></li>
+                            <li><a href="#Contacto" class="text-decoration-none"> Contacto </a></li>
+                            <li><a href="#Faq" class="text-decoration-none"> Faq </a></li>
+                        </ul> 
+                    </nav>
+                    <div class="col-12 col-md-6 text-md-end">
+                        <small class="text-muted"> © 2026 Camilo Septimo - FanPage </small>
+                        <!-- Para hacer el de copyright es con ALT+0169-->
+                    </div>
+                </div>
+            </div> 
+         </footer>
+         <script  src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </main>     
+</body>
+</html>
