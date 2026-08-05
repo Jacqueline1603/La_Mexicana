@@ -7,6 +7,7 @@
     <meta name="description" content="Restaurante mexicano con comida auténtica y servicio excepcional.">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </head>
 <style>
     /* Esto crea el efecto de animación sin necesidad de un archivo CSS externo */
@@ -165,81 +166,134 @@
         
         <div class="row g-4 mb-5"> 
             
-            <!-- CUADRO 1 -->
-            <article class="col-12 col-md-6"> 
-                <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
-                    <div class="ratio ratio-16x9">
-                        <img src="./img/caract-1.jpg" class="card-img-top rounded-top" alt="Sabor Tradicional" style="object-fit: cover;">
-                    </div>
-                    <div class="card-body">
-                        <h3 class="card-title h5"> Ensalada mixta de la Casa </h3>
-                        <p class="card-text">
-                            Mezcla de lechugas, espinaca, arándano,
-                            aderezo de la casa y fruta de temporada.
-                        </p>
-                    </div>
-                </div>
-            </article>
+           <!-- CUADRO 1 -->
+                <article class="col-12 col-md-6"> 
+                    <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                        
+                        <!-- Contenedor adaptativo 16:9 -->
+                        <div class="ratio ratio-16x9">
+                            <model-viewer 
+                                src="./models/Ensalada.glb" 
+                                alt="Modelo 3D - Ensalada mixta de la Casa"
+                                camera-controls 
+                                auto-rotate 
+                                shadow-intensity="1"
+                                exposure="1"
+                                style="width: 100%; height: 100%; border-top-left-radius: inherit; border-top-right-radius: inherit; background-color: transparent;">
+                            </model-viewer>
+                        </div>
 
-            <!-- CUADRO 2 -->
-            <article class="col-12 col-md-6">
-                <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
-                    <div class="ratio ratio-16x9">
-                        <video controls class="rounded-top" poster="./img/poster-video.jpg" style="object-fit: cover;">
-                            <source src="./video/ambiente.mp4" type="video/mp4">
-                        </video>
+                        <div class="card-body">
+                            <h3 class="card-title h5"> Ensalada mixta de la Casa </h3>
+                            <p class="card-text">
+                                Mezcla de lechugas, espinaca, arándano,
+                                aderezo de la casa y fruta de temporada.
+                            </p>
+                        </div>
                     </div>
-                    <div class="card-body"> 
-                        <h3 class="card-title h5"> Platón de Chalupas </h3>
-                        <p class="card-text"> 
-                            Orden de 6 chalupas de salsa roja y verde
-                            con queso y cebolla finamente picada
-                        </p>
-                    </div>
-                </div>
-            </article> 
+                </article>
 
-            <!-- CUADRO 3 -->
-            <article class="col-12 col-md-6"> 
-                <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
-                    <div class="ratio ratio-16x9">
-                        <img src="./img/caract-3.jpg" class="card-img-top rounded-top" alt="Ingredientes" style="object-fit: cover;">
+                            <!-- CUADRO 2 -->
+                <article class="col-12 col-md-6">
+                    <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                        
+                        <!-- Contenedor adaptativo 16:9 -->
+                        <div class="ratio ratio-16x9">
+                            <model-viewer 
+                                src="./models/Chalupas.glb" 
+                                alt="Modelo 3D - Platón de Chalupas"
+                                camera-controls 
+                                auto-rotate 
+                                shadow-intensity="1"
+                                exposure="1"
+                                style="width: 100%; height: 100%; border-top-left-radius: inherit; border-top-right-radius: inherit; background-color: transparent;">
+                            </model-viewer>
+                        </div>
+
+                        <div class="card-body"> 
+                            <h3 class="card-title h5"> Platón de Chalupas </h3>
+                            <p class="card-text"> 
+                                Orden de 6 chalupas de salsa roja y verde
+                                con queso y cebolla finamente picada
+                            </p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h3 class="card-title h5"> Sopa de Apizahuatl </h3>
-                        <p class="card-text"> 
-                            Caldillo de frijoles de la casa con torlla
-                            en juliana, queso fresco y chipotle
-                        </p>
+                </article>
+
+                            <!-- CUADRO 3 -->
+                <article class="col-12 col-md-6"> 
+                    <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                        
+                        <!-- Contenedor adaptativo 16:9 -->
+                        <div class="ratio ratio-16x9">
+                            <model-viewer 
+                                src="./models/SopaApizahuac.glb" 
+                                alt="Modelo 3D - Sopa de Apizahuatl"
+                                camera-controls 
+                                auto-rotate 
+                                shadow-intensity="1"
+                                exposure="1"
+                                style="width: 100%; height: 100%; border-top-left-radius: inherit; border-top-right-radius: inherit; background-color: transparent;">
+                            </model-viewer>
+                        </div>
+
+                        <div class="card-body">
+                            <h3 class="card-title h5"> Sopa de Apizahuatl </h3>
+                            <p class="card-text"> 
+                                Caldillo de frijoles de la casa con tortilla
+                                en juliana, queso fresco y chipotle
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
 
             <!-- CUADRO 4 -->
             <article class="col-12 col-md-6"> 
                 <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    
+                    <!-- Contenedor adaptativo 16:9 -->
                     <div class="ratio ratio-16x9">
-                        <img src="./img/caract-4.jpg" class="card-img-top rounded-top" alt="Servicio" style="object-fit: cover;">
+                        <model-viewer 
+                            src="./models/NewYork.glb" 
+                            alt="Modelo 3D - Corte New York"
+                            camera-controls 
+                            auto-rotate 
+                            shadow-intensity="1"
+                            exposure="1"
+                            style="width: 100%; height: 100%; border-top-left-radius: inherit; border-top-right-radius: inherit; background-color: transparent;">
+                        </model-viewer>
                     </div>
+
                     <div class="card-body">
-                        <h3 class="card-title h5"> Sopa de Medula </h3>
+                        <h3 class="card-title h5"> Corte New York </h3>
                         <p class="card-text"> 
-                            Sopa tradicional tlaxcalteca elaborada con caldo de huesos, carne de res, verduras frescas y especias aromáticas, perfecta para reconfortar el alma.
+                            Corte de carne de res de alta calidad, sazonado y asado a la perfección, acompañado de guarniciones clásicas como papas al horno y vegetales frescos, ofreciendo una experiencia culinaria satisfactoria y deliciosa.
                         </p>
                     </div>
                 </div>
             </article>
 
-            <!-- CUADRO 5 -->
+           <!-- CUADRO 5 -->
             <article class="col-12 col-md-6"> 
                 <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    
+                    <!-- Contenedor adaptativo 16:9 -->
                     <div class="ratio ratio-16x9">
-                        <img src="./img/caract-5.jpg" class="card-img-top rounded-top" alt="Platillos" style="object-fit: cover;">
+                        <model-viewer 
+                            src="./models/Tampiqueña.glb" 
+                            alt="Modelo 3D - Tampiqueña"
+                            camera-controls 
+                            auto-rotate 
+                            shadow-intensity="1"
+                            exposure="1"
+                            style="width: 100%; height: 100%; border-top-left-radius: inherit; border-top-right-radius: inherit; background-color: transparent;">
+                        </model-viewer>
                     </div>
+
                     <div class="card-body">
-                        <h3 class="card-title h5"> Gaoneras </h3>
+                        <h3 class="card-title h5"> Tampiqueña </h3>
                         <p class="card-text"> 
-                            Carnes asadas a la perfección, marinadas con nuestra mezcla secreta de especias y acompañadas de guarniciones tradicionales que realzan su sabor.
+                            Corte de carne asada acompañado de guarniciones tradicionales como frijoles, arroz, ensalada y tortillas recién hechas, ofreciendo una experiencia culinaria completa y deliciosa.
                         </p>
                     </div>
                 </div>
@@ -248,9 +302,20 @@
             <!-- CUADRO 6 -->
             <article class="col-12 col-md-6"> 
                 <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    
+                    <!-- Contenedor adaptativo 16:9 -->
                     <div class="ratio ratio-16x9">
-                        <img src="./img/caract-6.jpg" class="card-img-top rounded-top" alt="Historia" style="object-fit: cover;">
+                        <model-viewer 
+                            src="./models/Barbacoa.glb" 
+                            alt="Modelo 3D - Mixiote de Carnero"
+                            camera-controls 
+                            auto-rotate 
+                            shadow-intensity="1"
+                            exposure="1"
+                            style="width: 100%; height: 100%; border-top-left-radius: inherit; border-top-right-radius: inherit; background-color: transparent;">
+                        </model-viewer>
                     </div>
+
                     <div class="card-body">
                         <h3 class="card-title h5"> Mixiote de Carnero </h3>
                         <p class="card-text"> 
@@ -259,7 +324,6 @@
                     </div>
                 </div>
             </article>
-        </div>
 
         <!-- ========================================== -->
         <!-- SECCIÓN 2: PLATILLOS DE TEMPORADA -->
@@ -300,7 +364,7 @@
                     </summary>
                     <div class="card-body pt-0">
                         <div class="ratio ratio-16x9 mb-3">
-                            <img src="./img/temporada-2.jpg" class="rounded" alt="Pan de Muerto" style="object-fit: cover;">
+                            <img src="./img/Mixiote.jpeg" class="rounded" alt="Pan de Muerto" style="object-fit: cover;">
                         </div>
                         <p class="card-text text-white-50">
                             Mixiote tradicional hecho con carne de carnero marinada en una mezcla de chiles y especias, envuelta en hojas de maguey y cocida lentamente para lograr una textura tierna y un sabor inigualable.
@@ -411,12 +475,47 @@
                 </div>
             </article>
 
-            <!-- CUADRO 3 -->
+           <!-- CUADRO 3 -->
             <article class="col-12 col-md-6"> 
                 <div class="card h-100 shadow border-0 transition" style="background-color: #FFF0CF; color: rgb(40, 20, 10); font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    
+                    <!-- Carrusel Bootstrap dentro del contenedor 16:9 -->
                     <div class="ratio ratio-16x9">
-                        <img src="./img/Catedral apizaco.png" class="card-img-top rounded-top" alt="Ingredientes" style="object-fit: cover;">
+                        <div id="carouselBasilica" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                            
+                            <!-- Indicadores inferiores -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselBasilica" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+                                <button type="button" data-bs-target="#carouselBasilica" data-bs-slide-to="1" aria-label="Foto 2"></button>
+                                <button type="button" data-bs-target="#carouselBasilica" data-bs-slide-to="2" aria-label="Foto 3"></button>
+                            </div>
+
+                            <!-- Imágenes del carrusel -->
+                            <div class="carousel-inner h-100 rounded-top">
+                                <div class="carousel-item active h-100">
+                                    <img src="./img/catedral1.jpeg" class="d-block w-100 h-100" alt="Basílica de la Misericordia - Vista 1" style="object-fit: cover;">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/catedral2.jpeg" class="d-block w-100 h-100" alt="Basílica de la Misericordia - Vista 2" style="object-fit: cover;">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/catedral3.jpeg" class="d-block w-100 h-100" alt="Basílica de la Misericordia - Vista 3" style="object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <!-- Botones de navegación (Anterior / Siguiente) -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBasilica" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselBasilica" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+
+                        </div>
                     </div>
+
                     <div class="card-body">
                         <h3 class="card-title h5"> Basílica de la Misericordia </h3>
                         <p class="card-text"> 
@@ -471,14 +570,47 @@
                 </div>
             </article>
 
-            <!-- CUADRO 7  -->
+            <!-- CUADRO 7 -->
             <article class="col-12 col-md-6">
                 <div class="card h-100 shadow border-0 transition" style="background-color: #FFF0CF; color: rgb(40, 20, 10); font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
+                    
+                    <!-- Carrusel Bootstrap dentro del contenedor 16:9 -->
                     <div class="ratio ratio-16x9">
-                         <div class="ratio ratio-16x9">
-                        <img src="./img/Estacion.png" class="card-img-top rounded-top" alt="Ingredientes" style="object-fit: cover;">
+                        <div id="carouselEstacion" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                            
+                            <!-- Indicadores inferiores -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselEstacion" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+                                <button type="button" data-bs-target="#carouselEstacion" data-bs-slide-to="1" aria-label="Foto 2"></button>
+                                <button type="button" data-bs-target="#carouselEstacion" data-bs-slide-to="2" aria-label="Foto 3"></button>
+                            </div>
+
+                            <!-- Imágenes del carrusel -->
+                            <div class="carousel-inner h-100 rounded-top">
+                                <div class="carousel-item active h-100">
+                                    <img src="./img/estacion1.jpeg" class="d-block w-100 h-100" alt="La Estación del Ferrocarril - Vista 1" style="object-fit: cover;">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/estacion2.jpeg" class="d-block w-100 h-100" alt="La Estación del Ferrocarril - Vista 2" style="object-fit: cover;">
+                                </div>
+                                <div class="carousel-item h-100">
+                                    <img src="./img/estacion3.jpeg" class="d-block w-100 h-100" alt="La Estación del Ferrocarril - Vista 3" style="object-fit: cover;">
+                                </div>
+                            </div>
+
+                            <!-- Botones de navegación (Anterior / Siguiente) -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstacion" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselEstacion" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+
+                        </div>
                     </div>
-                    </div>
+
                     <div class="card-body"> 
                         <h3 class="card-title h5"> La Estacion del Ferrocarril </h3>
                         <p class="card-text"> 
@@ -486,8 +618,7 @@
                         </p>
                     </div>
                 </div>
-            </article> 
-
+            </article>
         </div>
     </div>    
 </section>
