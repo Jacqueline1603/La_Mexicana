@@ -10,16 +10,16 @@
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </head>
 <style>
-    /* Esto crea el efecto de animación sin necesidad de un archivo CSS externo */
+    
     .transition {
         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
         cursor: pointer;
     }
 
-    /* Lo que pasa cuando el usuario pasa el cursor sobre el cuadro */
+    
     .transition:hover {
-        transform: translateY(-8px) scale(1.01); /* Levanta el cuadro y hace un mini zoom */
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4) !important; /* Vuelve la sombra más profunda */
+        transform: translateY(-8px) scale(1.01); 
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4) !important; 
     }
 </style>
 <body> 
@@ -70,26 +70,26 @@
 <section id="inicio" aria-labelledby="Inicio">
     <div class="container py-5 text-center">
         
-      <!-- Contenedor relativo para posicionar el texto sobre la imagen -->
+      
         <div class="position-relative d-inline-block w-100">
             
-            <!-- Tu Imagen de fondo (con mayor iluminación aplicándole brightness) -->
+            
             <img src="./img/Restaurante.png" class="img-fluid rounded w-100" style="display: block; min-height: 300px; object-fit: cover; filter: brightness(1.25);">
             
-            <!-- Capa oscura sutil para contraste óptimo -->
+            
             <div class="position-absolute top-0 start-0 w-100 h-100 rounded" style="background-color: rgba(0, 0, 0, 0.2);"></div>
 
-            <!-- Contenido Centrado Absolutamente -->
+            
             <div class="position-absolute top-50 start-50 translate-middle w-100 px-3 text-center">
                 <header class="mb-3">
-                    <!-- Título con tipografía Bodoni/Constantia y texto blanco semi-transparente -->
+                   
                     <h1 id="Inicio" class="display-3 fw-bold" style="font-family: 'Bodoni MT', 'Bodoni', 'Constantia', serif; color: rgba(255, 255, 255, 0.88); text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);"> 
                         Desde 1950<br>
                         La tradición del buen comer.
                     </h1>
                 </header>
 
-                <!-- Botón abajo del título -->
+                
                 <p class="mb-0">
                     <a href="#Historia" class="btn btn-lg me-2 shadow" style="font-family: 'Gill Sans MT', 'Gill Sans', 'Arial', sans-serif; background-color: #990000; color: white; border: none; padding: 10px 30px;"> 
                         Descubre Nuestra Historia 
@@ -102,19 +102,19 @@
 
     </div>
 </section>
-       <!-- Layout de contenido + sidebar -->
+       
 <section aria-labelledby="Historia" style="background-color: rgb(81, 48, 32); color: white;"> 
     <div class="container py-5"> 
         <div class="row align-items-center"> 
             
-            <!-- Columna de la Historia (Lado izquierdo) --> 
+            
             <article class="col-12 col-md-6" aria-labelledby="Historia"> 
-                <!-- Título con Gill Sans MT -->
+               
                 <h3 id="Historia" class="mb-4" style="font-family: 'Gill Sans MT', 'Gill Sans', 'Arial', sans-serif;"> 
                     Origen del Restaurante La Mexicana 
                 </h3>
                 
-                <!-- Textos con Constantia, texto justificado y letra más grande -->
+                
                 <p style="font-family: 'Constantia', 'Georgia', serif; line-height: 1.7; font-size: 1.15rem; text-align: justify;">
                     Una Identidad Inspirada en Apizaco.<br><br>
 
@@ -135,7 +135,7 @@
                
             </article>
 
-          <!-- Columna del Logo  -->
+        
             <div class="col-12 col-md-6 mt-4 mt-md-0 d-flex justify-content-center align-items-center">
                 <figure class="mb-0 text-center">
                     <img src="./img/logo.png" 
@@ -149,8 +149,7 @@
     </div>
 </section>
         
-       <!-- Caracteritiscas -->
-       <!-- Caracteritiscas y Platillos de Temporada -->
+      
 <section id="Platillos" aria-labelledby="Platillos-Titulo" style="background-color: #FFF0CF;"> 
     <div class="container py-5">
         
@@ -170,7 +169,7 @@
                 <article class="col-12 col-md-6"> 
                     <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
                         
-                        <!-- Contenedor adaptativo 16:9 -->
+                        
                         <div class="ratio ratio-16x9">
                             <model-viewer 
                                 src="./models/Ensalada.glb" 
@@ -197,7 +196,7 @@
                 <article class="col-12 col-md-6">
                     <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
                         
-                        <!-- Contenedor adaptativo 16:9 -->
+                        
                         <div class="ratio ratio-16x9">
                             <model-viewer 
                                 src="./models/Chalupas.glb" 
@@ -224,7 +223,7 @@
                 <article class="col-12 col-md-6"> 
                     <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
                         
-                        <!-- Contenedor adaptativo 16:9 -->
+                        
                         <div class="ratio ratio-16x9">
                             <model-viewer 
                                 src="./models/SopaApizahuac.glb" 
@@ -251,7 +250,7 @@
             <article class="col-12 col-md-6"> 
                 <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
                     
-                    <!-- Contenedor adaptativo 16:9 -->
+                  
                     <div class="ratio ratio-16x9">
                         <model-viewer 
                             src="./models/NewYork.glb" 
@@ -277,7 +276,7 @@
             <article class="col-12 col-md-6"> 
                 <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
                     
-                    <!-- Contenedor adaptativo 16:9 -->
+                   
                     <div class="ratio ratio-16x9">
                         <model-viewer 
                             src="./models/Tampiqueña.glb" 
@@ -303,7 +302,7 @@
             <article class="col-12 col-md-6"> 
                 <div class="card h-100 shadow border-0 transition" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
                     
-                    <!-- Contenedor adaptativo 16:9 -->
+                    
                     <div class="ratio ratio-16x9">
                         <model-viewer 
                             src="./models/Barbacoa.glb" 
@@ -467,7 +466,7 @@
                             <!-- Modelo 2 -->
                             <div class="col-6 h-100">
                                 <model-viewer 
-                                    src="./models/casa_de_piedra_2.glb" 
+                                    src="./models/Habitacion.glb" 
                                     alt="Modelo 3D 2 - Museo Casa de Piedra"
                                     camera-controls 
                                     auto-rotate 
@@ -492,7 +491,7 @@
             <article class="col-12 col-md-6"> 
                 <div class="card h-100 shadow border-0 transition" style="background-color: #FFF0CF; color: rgb(40, 20, 10); font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
                     
-                    <!-- Contenedor adaptativo 16:9 -->
+                   
                     <div class="ratio ratio-16x9">
                         <model-viewer 
                             src="./models/Toro.glb" 
@@ -518,18 +517,18 @@
             <article class="col-12 col-md-6"> 
                 <div class="card h-100 shadow border-0 transition" style="background-color: #FFF0CF; color: rgb(40, 20, 10); font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
                     
-                    <!-- Carrusel Bootstrap dentro del contenedor 16:9 -->
+                 
                     <div class="ratio ratio-16x9">
                         <div id="carouselBasilica" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                             
-                            <!-- Indicadores inferiores -->
+                            
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselBasilica" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
                                 <button type="button" data-bs-target="#carouselBasilica" data-bs-slide-to="1" aria-label="Foto 2"></button>
                                 <button type="button" data-bs-target="#carouselBasilica" data-bs-slide-to="2" aria-label="Foto 3"></button>
                             </div>
 
-                            <!-- Imágenes del carrusel -->
+                          
                             <div class="carousel-inner h-100 rounded-top">
                                 <div class="carousel-item active h-100">
                                     <img src="./img/catedral1.jpeg" class="d-block w-100 h-100" alt="Basílica de la Misericordia - Vista 1" style="object-fit: cover;">
@@ -613,18 +612,18 @@
             <article class="col-12 col-md-6">
                 <div class="card h-100 shadow border-0 transition" style="background-color: #FFF0CF; color: rgb(40, 20, 10); font-family: 'Gill Sans MT', 'Gill Sans', sans-serif;">
                     
-                    <!-- Carrusel Bootstrap dentro del contenedor 16:9 -->
+                  
                     <div class="ratio ratio-16x9">
                         <div id="carouselEstacion" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                             
-                            <!-- Indicadores inferiores -->
+                          
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselEstacion" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
                                 <button type="button" data-bs-target="#carouselEstacion" data-bs-slide-to="1" aria-label="Foto 2"></button>
                                 <button type="button" data-bs-target="#carouselEstacion" data-bs-slide-to="2" aria-label="Foto 3"></button>
                             </div>a
 
-                            <!-- Imágenes del carrusel -->
+                          
                             <div class="carousel-inner h-100 rounded-top">
                                 <div class="carousel-item active h-100">
                                     <img src="./img/estacion1.jpeg" class="d-block w-100 h-100" alt="La Estación del Ferrocarril - Vista 1" style="object-fit: cover;">
@@ -718,7 +717,7 @@
                                 <button type="button" data-bs-target="#carruselComedor" data-bs-slide-to="4" aria-label="Foto 5"></button>
                             </div>
 
-                            <!-- Imágenes del Carrusel -->
+                            
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="4000">
                                     <img src="img/Comedor 1.png" class="d-block w-100" alt="Comedor Principal - Vista 1" style="height: 340px; object-fit: cover; object-position: center;">
@@ -737,7 +736,7 @@
                                 </div>
                             </div>
 
-                            <!-- Controles de Navegación -->
+                           
                             <button class="carousel-control-prev" type="button" data-bs-target="#carruselComedor" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Anterior</span>
@@ -756,7 +755,7 @@
                     </div>
                 </div>
                 
-                <!-- Cuadro 2: Jardín (con Carrusel de 3 fotos) -->
+                <!-- Cuadro 2: Jardín  -->
                 <div class="col">
                     <div class="card h-100 shadow border-0 tarjeta-animada overflow-hidden" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif; border-radius: 12px;">
                         
@@ -770,7 +769,7 @@
                                 <button type="button" data-bs-target="#carruselJardin" data-bs-slide-to="2" aria-label="Foto 3"></button>
                             </div>
 
-                            <!-- Imágenes del Carrusel -->
+                           
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="4000">
                                     <img src="img/Jardin 1.png" class="d-block w-100" alt="Jardín - Vista 1" style="height: 340px; object-fit: cover; object-position: center;">
@@ -802,7 +801,7 @@
                     </div>
                 </div>
 
-                <!-- Cuadro 3: Bar (con Carrusel de 3 fotos) -->
+                <!-- Cuadro 3: Bar -->
                 <div class="col">
                     <div class="card h-100 shadow border-0 tarjeta-animada overflow-hidden" style="background-color: rgb(81, 48, 32); color: white; font-family: 'Gill Sans MT', 'Gill Sans', sans-serif; border-radius: 12px;">
                         
@@ -816,7 +815,7 @@
                                 <button type="button" data-bs-target="#carruselBar" data-bs-slide-to="2" aria-label="Foto 3"></button>
                             </div>
 
-                            <!-- Imágenes del Carrusel -->
+                            
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="4000">
                                     <img src="img/Cantina 1.png" class="d-block w-100" alt="Bar - Vista 1" style="height: 340px; object-fit: cover; object-position: center;">
